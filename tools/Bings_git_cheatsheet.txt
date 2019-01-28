@@ -1,0 +1,67 @@
+git init - to initialize a git repo in the folder called master (main branch)
+git status - check the status of the repo
+
+Commit Method 1:
+git add - stage a file to commit
+git commit - opens a vim
+	i - insert mode (for typing commit message)
+	esc - escape insert mode
+	:wq - execute the commit (check again with git status after this step)
+
+Commit Method 2:
+git add
+git commit -m 'commit message here'
+
+git log - provides the time log of the repo
+git log --reverse - reverse the time order of the log
+press q to exit
+
+git add . - staging all the files in the repo for commit
+git add *.html - staging only .html files
+
+touch - bash command that adds a file to the repo {e.g. touch style.css}
+touch .gitignore - creates a .gitignore file in the repo. Adding extensions like {*.log} to the file will let git ignore the extension files with {git add .}
+
+git branch MyBranch - add a branch to the repo called MyBranch (vs master)
+git checkout MyBranch - switch working branch to MyBranch
+git checkout -b MyBranch - create a new branch called MyBranch and switch to it
+(in master) git merge MyBranch - merge MyBranch to master
+	a file created in MyBranch can be seen in master and can be added and committed in master (won't show in MyBranch log)
+	a file created in MyBranch should be added and committed to MyBranch first before merging in master
+	a file created in master cannot be seen in MyBranch (files created outside of MyBranch cannot be seen in MyBranch)
+	a file created in MyBranch can be seen in master
+	a file created/modified in MyBranch but not committed yet to MyBranch will show up ad untracked file in master
+
+(need to confirm this), while in MyBranch use git merge master will not overwrite new edits in the MyBranch file with master file without edits
+
+git commit -a -m 'commit message here' - allows you to skip the add part for commit (for edited existing files only, new files still needs to use add first)
+
+During a merge conflict (with master) while in MyBranch, the branch name will be shown as (MyBranch|MERGING)
+Must go into the code to fix it (difference will be marked automatically), like the following
+	<<<<<<< HEAD
+	change in branch
+	=======
+	stuff in master
+	>>>>>>> master
+The top part above ======= is content in MyBranch file, below ======= is the content from master file.
+Once done, commit with git commit -a -m 'merge message', check status
+
+git mergetool - Can also download and use merge tool to help with merge conflicts
+
+git rm file.txt - deletes file.txt (the deletion still needs to be committed to take effect, good time for regrets)
+git rm --cached file.txt - only removes it from the repo file system (master and child branches). The file is not deleted.
+	You can add the file back to the repo file system (master and child) with git add
+
+git stash - stash away the modifications (so it won't show on status)
+git stash show - show what is being stashed
+git stash apply - retrieve the stashed files
+git stash clear - BE CAREFUL! This clear out the modifications
+
+git rebase aBranch - while in bBranch, merge changes commited in aBranch into bBranch
+
+git remote - checks what remote repo you are working with
+git remote -v - shows url of the remote repo (if any)
+git clone {clone url} - clones the git repo from github/remote location
+
+
+

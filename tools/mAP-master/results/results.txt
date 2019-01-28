@@ -1,0 +1,70 @@
+
+# Number of ground-truth objects per class
+backpack: 11
+bed: 8
+book: 33
+bookcase: 7
+bottle: 11
+bowl: 15
+cabinetry: 52
+chair: 106
+coffeetable: 22
+countertop: 21
+cup: 36
+diningtable: 47
+doll: 8
+door: 29
+heater: 13
+nightstand: 7
+person: 7
+pictureframe: 24
+pillow: 45
+pottedplant: 29
+remote: 8
+shelf: 6
+sink: 14
+sofa: 21
+tap: 18
+tincan: 28
+tvmonitor: 20
+vase: 12
+wastecontainer: 11
+windowblind: 17
+
+# Number of predicted objects per class
+backpack: 5 (tp:3, fp:2)
+bed: 8 (tp:7, fp:1)
+book: 25 (tp:11, fp:14)
+bookcase: 1 (tp:1, fp:0)
+bottle: 20 (tp:5, fp:15)
+bowl: 10 (tp:6, fp:4)
+cabinetry: 14 (tp:7, fp:7)
+chair: 135 (tp:73, fp:62)
+coffeetable: 4 (tp:2, fp:2)
+countertop: 4 (tp:4, fp:0)
+cup: 27 (tp:17, fp:10)
+diningtable: 45 (tp:26, fp:19)
+door: 6 (tp:6, fp:0)
+heater: 2 (tp:1, fp:1)
+keyboard: 1 (tp:0, fp:1)
+knife: 1 (tp:0, fp:1)
+lamp: 1 (tp:0, fp:1)
+laptop: 2 (tp:0, fp:2)
+nightstand: 5 (tp:5, fp:0)
+oven: 4 (tp:0, fp:4)
+person: 3 (tp:3, fp:0)
+pictureframe: 13 (tp:7, fp:6)
+pillow: 16 (tp:8, fp:8)
+pottedplant: 30 (tp:20, fp:10)
+refrigerator: 32 (tp:0, fp:32)
+remote: 7 (tp:6, fp:1)
+sink: 8 (tp:4, fp:4)
+sofa: 22 (tp:19, fp:3)
+tap: 4 (tp:1, fp:3)
+tincan: 1 (tp:0, fp:1)
+toilet: 2 (tp:0, fp:2)
+toothbrush: 1 (tp:0, fp:1)
+tvmonitor: 18 (tp:13, fp:5)
+vase: 8 (tp:3, fp:5)
+wastecontainer: 5 (tp:5, fp:0)
+windowblind: 4 (tp:4, fp:0)

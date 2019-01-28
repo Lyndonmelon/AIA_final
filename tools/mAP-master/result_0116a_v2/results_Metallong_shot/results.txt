@@ -1,0 +1,9 @@
+
+# Number of ground-truth objects per class
+Metal: 142
+
+# Number of predicted objects per class
+Bottle: 1 (tp:0, fp:1)
+Metal: 33 (tp:22, fp:11)
+Paper: 4 (tp:0, fp:4)
+Person: 2 (tp:0, fp:2)
